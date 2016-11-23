@@ -105,8 +105,8 @@ public class DecoratorPattern {
         Shape line = new Line(0,0,1,1,2,2);
 
         Shape redLine = new RedShapeDecorator(new Line(0,0,1,1,2,2));
-
         Shape redRectangle = new RedShapeDecorator(new Rectangle(0,0,0,4,6,0,6,4));
+
         System.out.println("Line with normal border");
         line.validate();
         line.draw();
